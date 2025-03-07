@@ -1,0 +1,25 @@
+using System;
+
+class Display 
+{
+    public void print<T>(T msg) 
+    {
+        Console.WriteLine("The message :{0} ",msg);
+    }
+}
+class Program 
+{
+    public static void Main() 
+    {
+        Display display = new Display();
+        display.print(" Prasanth ");
+        display.print(10);
+
+       Console.Read();
+    }
+}
+
+/*
+The message : Prasanth
+The message :10
+*/
