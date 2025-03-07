@@ -1,0 +1,28 @@
+using System;
+
+class Display<T>
+{
+    public Display(T msg) 
+    {
+        Console.WriteLine("The message :{0} ",msg);
+    }
+}
+class Program 
+{
+    public static void Main() 
+    {
+        Display<string> display = new Display<string>("prasanth");
+        Display<int> display1 = new Display<int>(41);
+        Display<double> display2 = new Display<double>(7.5);
+        Display<char> display3 = new Display<char>('9');
+
+       Console.Read();
+    }
+}
+
+/*
+The message :prasanth
+The message :41
+The message :7.5
+The message :9
+*/
